@@ -7,8 +7,8 @@
 
   /*RESET*/
   * {
-    margin: O;
-    padding: 0;
+    margin:O;
+    padding: ;
     box-sizing: border-box;
 }
 
@@ -72,6 +72,26 @@ color:var(--LINK-COLOR);
     position:sticky;
 } 
 
+.footer{
+    background-color: var(--BG-HEADER-COL0R);
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
 
+.pic{
+    width: 20vh;
+    height: 20vh;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+pp 
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
     
 
