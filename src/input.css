@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto+Slab&display=swap');
+
+  /*RESET*/
+  * {
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*VARIABLES*/
+:root{
+    /*fONTS*/
+    --FF:'Nunito Sans', sans-serif;
+    --FF-HEADINGS:;
+
+    /*COLORS*/
+    --BG-COLOR:#EEE;
+    --FONT-COLOR:#000;
+    --BORDER-COLOR:BLACK;
+    --LINK-COLOR:#000;
+    --LINK-HOVER:rgba(0, 0%, 0%,  0.6);
+    --LINK-ACTIVE:RED;
+    --BG-HEADER-COL0R:rgb(233, 204, 204);
+    --HEADER-COLOR:BLACK;
+}
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+
+ input, button, textarea{
+    font: inherit;
+ }
+
+html{
+    scroll-behavior: smooth;
+    font-family: 
+    background-color
+    color: whitesmoke;
+}
+
+   .header {
+    background-color: ;
+    color: aliceblue;
+   } 
+    
+
