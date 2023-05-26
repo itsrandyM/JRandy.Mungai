@@ -65,11 +65,13 @@ color:var(--LINK-COLOR);
 
 .header {
     background-color:var(--BG-HEADER-COL0R);
+    font-weight: bolder;
     display:flex ;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 0%;
+    top: 0;
     position:sticky;
+    
 } 
 
 .footer{
@@ -77,16 +79,30 @@ color:var(--LINK-COLOR);
     display: flex;
     flex-direction: column;
     gap:2px;
+    bottom: 0;
 }
-
 .pic{
-    width: 20vh;
-    height: 20vh;
-    padding: 1rem;
-    padding-top: 0;
+    width: 5%;
+    flex-grow: 0.1;
 }
 
-pp 
+.pic img{
+   width: 100;
+   padding-top: 0;
+   border: 2px double black;
+   border-radius: 50%;
+   
+}
+
+.block {
+    width: 30vh;
+    height: 30vh;
+    padding: 1rem;
+}
+
+.left{
+    float: left;
+}
 
 nav {
     display: flex;
