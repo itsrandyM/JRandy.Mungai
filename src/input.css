@@ -67,20 +67,28 @@ color:var(--LINK-COLOR);
     background-color:var(--BG-HEADER-COL0R);
     font-weight: bolder;
     display:flex ;
-    flex-direction: row;
+    flex-direction:;
     justify-content: space-evenly;
     top: 0;
     position:sticky;
+    list-style-type: none;
     
 } 
 
 .footer{
     background-color: var(--BG-HEADER-COL0R);
     display: flex;
-    flex-direction: column;
-    gap:2px;
+    flex-direction: row;
+    gap:4px;
     bottom: 0;
+   
 }
+
+.footer__navy{
+    
+    
+
+
 .pic{
     width: 5%;
 
@@ -111,6 +119,17 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 2px;
+    padding: 0.5rem;
+    ;
 }
     
+.nav__ul{
+    list-style-type: none;
+    display: grid;
+    
+    
 
+
+    gap: 2px;
+
+}
