@@ -83,7 +83,7 @@ color:var(--LINK-COLOR);
 }
 .pic{
     width: 5%;
-    flex-grow: 0.1;
+
 }
 
 .pic img{
@@ -95,8 +95,8 @@ color:var(--LINK-COLOR);
 }
 
 .block {
-    width: 30vh;
-    height: 30vh;
+    width: 25vh;
+    height: 25vh;
     padding: 1rem;
     border: 1px solid #000;
 }
@@ -106,7 +106,7 @@ color:var(--LINK-COLOR);
     margin: 1rem;
 }
 
-
+*/
 nav {
     display: flex;
     flex-direction: row;
