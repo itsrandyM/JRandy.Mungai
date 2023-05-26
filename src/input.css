@@ -27,7 +27,7 @@
     --LINK-COLOR:#000;
     --LINK-HOVER:rgba(0, 0%, 0%,  0.6);
     --LINK-ACTIVE:RED;
-    --BG-HEADER-COL0R:rgb(233, 204, 204);
+    --BG-HEADER-COL0R:rgb(116, 19, 19);
     --HEADER-COLOR:BLACK;
 }
  img {
@@ -44,13 +44,34 @@
 html{
     scroll-behavior: smooth;
     font-family: 
-    background-color
-    color: whitesmoke;
+    color: var(--FONT-COLOR) ;
+}
+body{
+    position: absolute;
+    min-height:100vh;
+
+}
+p{
+    line-height: 1.5;
 }
 
-   .header {
-    background-color: ;
-    color: aliceblue;
-   } 
+a:any-link{
+color:var(--LINK-COLOR);
+}
+ a:hover, a:focus-visible{
+    color: var(--LINK-HOVER);
+ }
+
+
+.header {
+    background-color:var(--BG-HEADER-COL0R);
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0%;
+    position:sticky;
+} 
+
+
     
 
