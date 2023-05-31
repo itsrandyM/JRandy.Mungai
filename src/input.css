@@ -1,140 +1,140 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*RESET*/
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto+Slab&display=swap');
-
-  /*RESET*/
-  * {
-    margin:O;
-    padding: ;
+* {
+    margin:o;
+    padding: 0;
     box-sizing: border-box;
-}
-
-
-
-/*VARIABLES*/
-:root{
+  }
+  
+  /*VARIABLES*/
+  
+  :root{
     /*fONTS*/
     --FF:'Nunito Sans', sans-serif;
-    --FF-HEADINGS:;
-
+    --FF-HEADINGS:'Nunito Sans', sans-serif;
     /*COLORS*/
     --BG-COLOR:#EEE;
+    --MAIN-BG:hwb(0 96% 4%);
     --FONT-COLOR:#000;
     --BORDER-COLOR:BLACK;
     --LINK-COLOR:#000;
     --LINK-HOVER:rgba(0, 0%, 0%,  0.6);
     --LINK-ACTIVE:RED;
-    --BG-HEADER-COL0R:rgb(116, 19, 19);
+    --BG-HEADER-COL0R:rgb(141, 32, 32);
     --HEADER-COLOR:BLACK;
-}
- img {
+  }
+  
+  img {
     display: block;
     max-width: 100%;
     height: auto;
- }
-
-
- input, button, textarea{
+  }
+  
+  input, button, textarea{
     font: inherit;
- }
-
-html{
+  }
+  
+  html{
     scroll-behavior: smooth;
-    font-family: 
-    color: var(--FONT-COLOR) ;
-}
-body{
-    position: absolute;
+    font-family:var(--FF);
+    color:var(--FONT-COLOR);
     min-height:100vh;
+  }
+  
+  body{
+    position: absolute;
+   
+  }
+.main{
+    scroll-margin-top:100px;
+    margin:25px;
+    background-color: var(--MAIN-BG);
+  }
 
-}
-p{
+  p{
     line-height: 1.5;
-}
-
-a:any-link{
-color:var(--LINK-COLOR);
-}
- a:hover, a:focus-visible{
+  }
+  
+  a:-moz-any-link{
+    color:var(--LINK-COLOR);
+  }
+  
+  a:any-link{
+    color:var(--LINK-COLOR);
+  }
+  
+  a:hover, a:focus-visible{
     color: var(--LINK-HOVER);
- }
-
-
-.header {
+  }
+  
+  .header {
     background-color:var(--BG-HEADER-COL0R);
     font-weight: bolder;
-    display:flex ;
-    flex-direction:;
+    display:flex;
+    flex-direction:row;
     justify-content: space-evenly;
     top: 0;
     position:sticky;
     list-style-type: none;
-    
-} 
-
-.footer{
+  }
+  
+  .footer{
     background-color: var(--BG-HEADER-COL0R);
     display: flex;
     flex-direction: row;
-    gap:4px;
+    gap:10px;
     bottom: 0;
-   
-}
+  }
 
-.footer__ul{
+  .right{
+    text-align: right;
+  }
+  
+  .footer__ul{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly ;
-
-}
-
-
-.pic{
+    gap: 5px;
+  }
+  
+  .pic{
     width: 5%;
-
-}
-
-.pic img{
-   width: 100;
-   padding-top: 0;
-   border: 2px double black;
-   border-radius: 50%;
-   
-}
-
-.block {
+  }
+  
+  .pic img{
+    width: 100;
+    padding-top: 0;
+    border: 2px double black;
+    border-radius: 50%;
+  }
+  
+  .block {
     width: 25vh;
     height: 25vh;
     padding: 1rem;
     border: 1px solid #000;
-}
-
-.left{
+  }
+  
+  .left{
     float: left;
     margin: 1rem;
-}
-
-*/
-nav {
+  }
+  
+  nav {
     display: flex;
     flex-direction: row;
     gap: 2px;
     padding: 0.5rem;
-    ;
-}
-    
-.nav__ul{
+  }
+  
+  .nav__ul{
     list-style-type: none;
     display: grid;
-    grid grid-template-rows:100%  ;
-     gap: 2px;
-}
-
-.luckyJ {
+    
+  }
+  
+  .luckyJ {
     color:red ;
     background-color: black;
     font-weight: bold;
@@ -144,34 +144,52 @@ nav {
     top: -100px;
     left: 30px;
     animation: hello 3s ease-in-out 1.5s forwards ;
+  }
 
+.columns {
+    column-count: 3;
+    column-width: 250px;
 }
-
-@keyframes hello {
+  
+  @keyframes hello {
     0%{
-        top: -20px;
-        transform:skew(0deg, -5deg) ;
-        scaleY(0);
+      top: -20px;
+      transform:skew(0deg, -5deg) ;
+      scaleY:(0);
     }
-80%{
-    top: 30px;
-    transform: skew(10deg ,-5deg);
-    scaleY(1.2);
-100%{
-    top: 30px;
-    transform: skew(-10deg ,-5deg);
-    scaleY(1);
-}
-
-    
-}
-
- @media screen and (min-width:576px) {
+  
+    80%{
+      top: 30px;
+      transform: skew(10deg ,-5deg);
+      scaleY:(1.2);
+    }
+  
+    100%{
+      top: 30px;
+      transform: skew(-10deg ,-5deg);
+      scaleY:(1);
+    }
+  }
+  
+  @media screen and (min-width:576px) {
     body{
-        background-color: whitesmoke;
+      background-color: whitesmoke;
     };
- }
+  }
+  
+  @media screen and (min-width:768px){
+    body{
+      background-color: white;
 
- @media screen and (min-width:768px){
-  background-color:white;
- }
+    }
+  }
+  .contact__hero{
+    padding: 20px;
+    margin-left: 20px;
+}
+.contact__button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: red;
+    color: #000;
+}
